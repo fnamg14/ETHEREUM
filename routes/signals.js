@@ -3,6 +3,7 @@ const router = express.Router();
 const signalsController = require('../controllers/signalsController');
 
 router.post('/eth', signalsController.generateETHSignals);
+router.post('/get', signalsController.generateETHSignals);
 router.get('/upcoming', signalsController.getUpcomingSignals);
 router.post('/clear-cache', signalsController.clearCache);
 
